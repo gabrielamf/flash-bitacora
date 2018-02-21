@@ -1,0 +1,16 @@
+{
+  "name": "flash-bitacora-reto",
+  "version": "1.0.0",
+  "description": "Vamos a crear una bitácora con la que podrás agregar mensajes, imágenes, audio, video, ubicaciones y fechas. Te sugerimos lo siguiente para llevar a cabo este producto:",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}

@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.title {
+  font-family: 'Fredericka the Great', cursive;
+  color: #b25792;
+  padding: 1rem 0;
+}
+.subtitle {
+  font-family: 'khula', cursive;
+  color: #adc3ca;
+  font-size: 700;
+}
+.post {
+  width: 100%;
+}
+
+.contenido-post {
+  margin-top: 1rem;
+}
+.title-post {
+  color: #b25792;
+  border-bottom: 1px solid #d7d801;
+  padding: .5rem 0;
+  font-size: 2rem;
+  font-family: 'khula', cursive;
+  font-weight: 700;
+}
+.verde {
+  color: #d7d801 !important;
+}
+.morado {
+  color: #b25792 !important;
+}
+.rosado {
+  color: #cba2c4 !important;
+}
+.grisStrong {
+  color: #adc3ca !important;
+}
+.grisLigth {
+  color: #dce0e8 !important;
+}
+
+.boxMessage {
+  background-color: white;
+  height: 50%;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 2rem;
+  border: 2px solid #d7d801;
+  padding: 5rem;
+  font-family: 'khula', cursive;
+}
