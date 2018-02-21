@@ -220,4 +220,44 @@ $('#img-modal').on('click', function() {
   $('#btn-img').on('click', img);
 });
 
+// -------------- VIDEO AUDIO --------------- //
+function videoAudio() {
+  let urlAV = localStorage.url;
+  let typeFile = localStorage.type;
+  let estructureAV;
+  if (urlAV) {
+    if (typeFile === 'video') {
+      estructureAV = ` <div class="boxMessage col l5 center-align z-depth-5">
+      <div class="col s12 m12">
+        <div class="card">
+          <div class="card-image">
+          <video class="responsive-video" src="${url}" controls></video>
+          </div>
+          <div class="card-content">
+            <p class="title"></p>
+          </div>
+        </div>
+      </div>
+    </div>`;
+    }
+    if (typeFile === 'audio') {
+      estructureAV = ` <div class="boxMessage col l5 center-align z-depth-5">
+      <div class="col s12 m12">
+        <div class="card">
+        <div class="card-content">
+            <p class="title"></p>
+          </div>
+          <div class="card-image">
+          <audio src="${url}" controls></audio>
+          </div>
+          
+        </div>
+      </div>
+    </div>`;
+    }
+    $('#post').prepend(estructureAV);
+  }
+  clearInput();
+};
+
 
