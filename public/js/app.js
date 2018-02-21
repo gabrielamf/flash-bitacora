@@ -261,3 +261,32 @@ function videoAudio() {
 };
 
 
+// Modal video
+$('#video-modal').on('click', function() {
+  $('#video-modal').addClass('waves-effect waves-light modal-trigger');
+
+  const modalVideoContentTemplate = 
+  `<div class="center">
+        <h6 class="title-post">Elige el video que deseas publicar</h6>
+    </div>
+    <form action="#">
+        <div class="file-field input-field">
+            <div class="btn btn pink lighten-4">
+                <i class="material-icons">linked_camera</i>
+                <input id="file-select-video" type="file" multiple>
+            </div>
+            <div class="file-path-wrapper">
+                <input class="file-path validate" type="text" placeholder="Change your video">
+            </div>
+        </div>
+    </form>`;
+
+  const modalVideoFooter = `<a id="btn-video" class="modal-action modal-close waves-effect btn-flat purple lighten-3 white-text">
+  <i class="material-icons right">send</i>Public</a>`;
+
+  $('.modal-content').html(modalVideoContentTemplate);
+  $('.modal-footer').html(modalVideoFooter);
+  $('#file-select-video').change(format);
+  $('#btn-video').on('click', videoAudio);
+});
+
